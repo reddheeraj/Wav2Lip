@@ -1,6 +1,6 @@
 from os import listdir, path
 import numpy as np
-import scipy, cv2, os, sys, argparse, audio
+import cv2, os, sys, argparse, audio
 import json, subprocess, random, string
 from tqdm import tqdm
 from glob import glob
@@ -18,7 +18,7 @@ parser.add_argument('--face', type=str,
 parser.add_argument('--audio', type=str, 
 					help='Filepath of video/audio file to use as raw audio source', required=True)
 parser.add_argument('--outfile', type=str, help='Video path to save result. See default for an e.g.', 
-								default='results/result_voice.mp4')
+								default='results/result.mp4')
 
 parser.add_argument('--static', type=bool, 
 					help='If True, then use only first video frame for inference', default=False)
