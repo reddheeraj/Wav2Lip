@@ -9,7 +9,6 @@ import subprocess
 
 
 def narrative_to_video(video_output_path): #, text):
-    
     # read from txt file for now
     with open("./analysis_from_llm/analysis.txt", "r") as file:
         text = file.read()
